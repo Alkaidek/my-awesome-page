@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+body, html
+  height: 100%
+  min-height: 100%
+  max-height: 100%
+  overflow: hidden
+  padding: 0px
+  margin: 0px
+
+.wallpaper
+  position: fixed
+  height: 100%
+  min-height: 100%
+  width: 100%
+  max-height: 100%
+  background-image: url('/assets/images/1.png')
+  animation-duration: 120s
+  animation-iteration-count: infinite
+  animation-name: wallpaper
+  animation-timing-function: ease
+
+.skillsBox
+  margin-left: 10%
+
+@keyframes wallpaper
+  0%
+    transform: scale(1, 1)
+
+  50%
+    transform: scale(1.5, 1.5)
+  100%
+    transform: scale(1, 1)
+
+@media(max-width: 800px)
+  .wallpaper
+    background-color: red
+    background-image: url('/assets/images/12.png')
+    z-index: 15
